@@ -115,6 +115,7 @@ button:hover {
   font-weight: 700;
 }
 
+/* Estilização do footer */
 footer {
   background: var(--card);
   color: var(--muted);
