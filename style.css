@@ -13,13 +13,20 @@
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 body {
-  margin: 0;
   font-family: Inter, system-ui, sans-serif;
   background: linear-gradient(180deg, var(--bg) 0%, #050607 100%);
   color: #e6eef3;
+  display: flex;
+  flex-direction: column; /* Usa flexbox para organizar o layout */
+  min-height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+}
+
+.page-wrapper {
+  flex: 1 0 auto; /* Cresce para preencher o espaço disponível */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,4 +113,41 @@ button:hover {
 .value {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+footer {
+  background: var(--card);
+  color: var(--muted);
+  padding: 15px;
+  text-align: center;
+  font-family: Inter, system-ui, sans-serif;
+  flex-shrink: 0; /* Impede que o footer encolha */
+}
+
+.footer-content {
+  max-width: var(--maxwidth);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
