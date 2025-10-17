@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
-<link rel="icon" type="image/png" href="img/calculator.png">
+  <link rel="icon" type="image/png" href="img/calculator.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="page-wrapper">
     <main class="card">
         <h1>Calculadora de Porcentagem</h1>
 
         <label for="valor">Insira o Valor:</label>
-        <input type="number" id="valor" placeholder="Ex: 2.99 ou 100.00" min="0" step="0.01" autofocus>
+        <input type="number" id="valor" placeholder="Ex: 2.99 ou 100.00" min="0" step="0.01">
 
         <div class="buttons">
             <button id="btn50">50%</button>
@@ -25,10 +26,18 @@
             <div class="value"></div>
         </div>
     </main>
+  </div>
 
-    <script src="script.js"></script>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Calculadora de Porcentagem. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
-
 </html>
-
