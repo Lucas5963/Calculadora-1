@@ -1,3 +1,4 @@
+
 :root {
   --bg: #0b0d10;
   --card: #0f1417;
@@ -141,6 +142,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+  body{
+    flex-direction: column;
+    gap: 30px;
+  }
   .footer-content {
     flex-direction: column;
     gap: 8px;
